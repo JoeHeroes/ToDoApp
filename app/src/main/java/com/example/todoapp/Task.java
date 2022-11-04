@@ -9,6 +9,8 @@ public class Task {
 
     private String name;
 
+    private Category category = Category.Home;
+
     public boolean isDone() {
         return done;
     }
@@ -31,5 +33,17 @@ public class Task {
 
     public Date getDate() {
         return date;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setDate(Date date) {
+        this.date=date;
     }
 }
